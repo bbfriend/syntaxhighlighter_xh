@@ -1,6 +1,16 @@
 Syntaxhighlighter_XH – a CMSimple_XH plugin
 ===========================================
 
+## Type2:　sh4tinymce for TinyMCE 4  
+- plugins/syntaxhighlighter/editors/tinymce4/sh4tinymce --->  plugins/tinymce4/tinymce/plugins/sh4tinymce　
+- Edit init_\*.js  
+  `plugins:\[ ・・・　 sh4tinymce"],`  
+　`toolbarN: ・・・ sh4tinymce",`  
+ 
+sh4tinymce : http://lab.nomadonweb.com/en/sh4tinymce
+
+ ---
+
 [![beta: 1.0beta1](https://img.shields.io/badge/beta-1.0beta1-red.svg)](https://github.com/cmb69/syntaxhighlighter_xh/releases/tag/1.0beta1)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
