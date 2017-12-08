@@ -3,7 +3,8 @@ Syntaxhighlighter_XH – a CMSimple_XH plugin
 
 ## Type2:　sh4tinymce for TinyMCE 4  
 - plugins/syntaxhighlighter/editors/tinymce4/sh4tinymce --->  plugins/tinymce4/tinymce/plugins/sh4tinymce　
-- Edit init_\*.js  
+- Open and Edit file : plugins/tinymce4/inits/init_\*.js  
+  Add sh4tinymce
   `plugins:\[ ・・・　 sh4tinymce"],`  
 　`toolbarN: ・・・ sh4tinymce",`  
  
