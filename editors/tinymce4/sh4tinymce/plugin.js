@@ -5,6 +5,8 @@
 * by Robin Calmejane
 * http://nomadonweb.com
 * 
+* 2017 by Takashi Uchiyama http://cmsimple-jp.org
+*
 * Plugin page :
 * http://lab.nomadonweb/sh4tinymce
 * 
@@ -188,7 +190,14 @@ tinymce.PluginManager.add('sh4tinymce', function(editor,url) {
 	editor.addButton('sh4tinymce', {
 		icon: 'sh4tinymce',
 		tooltip: 'Insert/Edit Code',
-		onclick: showDialog
+//		stateSelector: 'pre',
+		onclick: showDialog,
+		onPostRender: function () {
+			var ctrl = this;
+			editor.on('NodeChange', function (e) {
+				ctrl.active(e.element.nodeName == 'PRE');
+			});
+		}
 	});
     editor.addMenuItem('sh4tinymce', {
         text: 'SH4TinyMCE',
